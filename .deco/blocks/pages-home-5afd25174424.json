@@ -1,42 +1,321 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "Header",
+      "logo": {
+        "src": "https://www.guper.co/wp-content/uploads/2023/05/guper-logo-1.svg",
+        "alt": "Guper Logo"
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+      "navigation": {
+        "links": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "About",
+            "url": "/about"
+          },
+          {
+            "label": "Services",
+            "url": "/services"
+          },
+          {
+            "label": "Contact",
+            "url": "/contact"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Get Started",
+            "href": "/get-started",
+            "outline": false
+          }
+        ]
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Unlock Your Team's Full Potential</p>",
+      "cta": [
+        {
+          "href": "#",
+          "text": "Get Started",
+          "outline": false
+        },
+        {
+          "href": "#",
+          "text": "Learn More",
+          "outline": true
+        }
+      ],
+      "description": "Guper is the all-in-one platform that empowers your team to collaborate, communicate, and achieve more together. Streamline your workflows, boost productivity, and take your business to new heights.",
+      "image": "https://framerusercontent.com/images/1JFj3FwlaG94oqmHBG1E6YaA.png",
+      "placement": "right"
+    },
+    {
+      "__resolveType": "site/sections/Logos.tsx",
+      "title": "Trusted by leading companies",
+      "logos": [
+        {
+          "src": "https://framerusercontent.com/images/3WALBX7nnuG7p85CLjlVmAphSw.png",
+          "altText": "Stripe logo"
+        },
+        {
+          "src": "https://framerusercontent.com/images/WeM7uYgNlRl1w0jrNqzqDrFE.png",
+          "altText": "Notion logo"
+        },
+        {
+          "src": "https://framerusercontent.com/images/Hj4S1gwBy7TpD7oc8yXUxjgKfA.png",
+          "altText": "Intercom logo"
+        },
+        {
+          "src": "https://framerusercontent.com/images/ow6gEHoXFt3GWZmm1ZxGVmhH0.png",
+          "altText": "Figma logo"
+        },
+        {
+          "src": "https://framerusercontent.com/images/nXLdc1LsU15dk6AODEpMkPl4.png",
+          "altText": "Airtable logo"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "Streamline Your Workflow",
+      "titlePlacement": "left",
+      "description": "Guper is the all-in-one platform that helps you manage your tasks, projects, and team collaboration effortlessly. With our intuitive interface and powerful features, you can boost productivity and achieve your goals faster.",
+      "descriptionPlacement": "left",
+      "tagline": "Simplify. Collaborate. Succeed.",
+      "image": "https://framerusercontent.com/images/48ryX1cwB40c88YrwRZ7LrCzVw.png",
+      "placement": "right",
+      "cta": [
+        {
+          "href": "#",
+          "text": "Get Started",
+          "style": "Outline"
+        },
+        {
+          "href": "#",
+          "text": "Learn More",
+          "style": "Ghost"
+        }
+      ],
+      "ctaPlacement": "left"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right",
+      "title": "Streamline Your Workflow",
+      "titlePlacement": "left",
+      "description": "Guper is the all-in-one platform that helps you manage your tasks, projects, and team collaboration effortlessly. With our intuitive interface and powerful features, you can boost productivity and achieve your goals faster.",
+      "descriptionPlacement": "left",
+      "tagline": "Simplify. Collaborate. Succeed.",
+      "image": "https://framerusercontent.com/images/48ryX1cwB40c88YdwPsVw9nOWw.png",
+      "cta": [
+        {
+          "href": "#",
+          "text": "Get Started",
+          "style": "Outline"
+        },
+        {
+          "href": "#",
+          "text": "Learn More",
+          "style": "Ghost"
+        }
+      ],
+      "ctaPlacement": "left"
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "title": "Latest Blog Posts",
+      "description": "Stay updated with our latest insights and news",
+      "posts": [
+        {
+          "title": "Revolutionizing Customer Support with AI",
+          "author": "Sarah Johnson",
+          "excerpt": "Discover how AI is transforming the landscape of customer support, making interactions more efficient and personalized.",
+          "image": "https://placehold.co/600x400",
+          "date": "2023-06-15",
+          "readingTime": "5 min read",
+          "tags": [
+            "AI",
+            "Customer Support",
+            "Technology"
+          ]
+        },
+        {
+          "title": "The Future of Remote Work: Trends and Predictions",
+          "author": "Michael Chen",
+          "excerpt": "Explore the evolving trends in remote work and what they mean for businesses and employees in the coming years.",
+          "image": "https://placehold.co/600x400",
+          "date": "2023-06-10",
+          "readingTime": "7 min read",
+          "tags": [
+            "Remote Work",
+            "Business",
+            "Future Trends"
+          ]
+        },
+        {
+          "title": "Enhancing Team Collaboration with Guper",
+          "author": "Emily Rodriguez",
+          "excerpt": "Learn how Guper's innovative features can boost your team's productivity and streamline communication.",
+          "image": "https://placehold.co/600x400",
+          "date": "2023-06-05",
+          "readingTime": "6 min read",
+          "tags": [
+            "Collaboration",
+            "Productivity",
+            "Guper"
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true,
+      "title": "What our customers say",
+      "slides": [
+        {
+          "content": {
+            "description": "Guper has been a game-changer for our business. Their AI-powered solutions have significantly improved our customer service efficiency and satisfaction rates. The implementation was smooth, and the support team is always responsive.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9f1a7a2f-e34c-4a8c-8172-eba0c9e49494",
+            "alt": "John Smith",
+            "name": "John Smith",
+            "position": "CEO, TechInnovate"
+          }
+        },
+        {
+          "content": {
+            "description": "We've seen a remarkable improvement in our customer engagement since integrating Guper's AI chatbot. It's like having a 24/7 support team that never sleeps. Our customers love the quick and accurate responses.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9f1a7a2f-e34c-4a8c-8172-eba0c9e49494",
+            "alt": "Sarah Johnson",
+            "name": "Sarah Johnson",
+            "position": "CTO, DataDrive Solutions"
+          }
+        },
+        {
+          "content": {
+            "description": "Guper's AI solutions have revolutionized how we handle customer inquiries. The natural language processing capabilities are impressive, and it's continuously learning and improving. It's been a valuable asset to our team.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9f1a7a2f-e34c-4a8c-8172-eba0c9e49494",
+            "alt": "Michael Lee",
+            "name": "Michael Lee",
+            "position": "Head of Customer Service, GlobalTech"
+          }
+        }
+      ],
+      "dots": true,
+      "interval": 5
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about Guper and our services.",
+      "cta": {
+        "href": "/contact",
+        "text": "Still have questions? Contact us"
+      },
+      "questions": [
+        {
+          "title": "What is Guper?",
+          "answer": "Guper is a platform that helps businesses streamline their operations and improve efficiency through innovative software solutions."
+        },
+        {
+          "title": "How can Guper benefit my business?",
+          "answer": "Guper can help your business by automating processes, improving communication, and providing valuable insights through data analysis, ultimately saving time and resources."
+        },
+        {
+          "title": "Is Guper suitable for small businesses?",
+          "answer": "Yes, Guper is designed to be scalable and can be tailored to meet the needs of businesses of all sizes, from startups to large enterprises."
+        },
+        {
+          "title": "How secure is the data stored with Guper?",
+          "answer": "We take data security very seriously. Guper employs industry-standard encryption and security measures to protect your data and ensure compliance with relevant regulations."
+        },
+        {
+          "title": "Can I integrate Guper with my existing software?",
+          "answer": "Yes, Guper offers various integration options to work seamlessly with your existing tools and software, enhancing your overall workflow."
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer",
+      "logo": {
+        "src": "https://www.guper.co/wp-content/uploads/2023/05/guper-logo-1.svg",
+        "alt": "Guper Logo"
+      },
+      "links": [
+        {
+          "title": "Produtos",
+          "items": [
+            {
+              "label": "Seguro Auto",
+              "href": "/seguro-auto"
+            },
+            {
+              "label": "Seguro Residencial",
+              "href": "/seguro-residencial"
+            },
+            {
+              "label": "Seguro Viagem",
+              "href": "/seguro-viagem"
+            }
+          ]
+        },
+        {
+          "title": "Empresa",
+          "items": [
+            {
+              "label": "Sobre nós",
+              "href": "/sobre-nos"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Carreiras",
+              "href": "/carreiras"
+            }
+          ]
+        }
+      ],
+      "subscribe": {
+        "title": "Fique por dentro",
+        "description": "Receba as últimas novidades e ofertas exclusivas.",
+        "instructions": "Inscreva-se para receber nossa newsletter"
+      },
+      "copyright": "© 2023 Guper. Todos os direitos reservados.",
+      "bottomLinks": [
+        {
+          "label": "Termos de Uso",
+          "href": "/termos-de-uso"
+        },
+        {
+          "label": "Política de Privacidade",
+          "href": "/politica-de-privacidade"
+        }
+      ],
+      "social": [
+        {
+          "network": "Facebook",
+          "href": "https://www.facebook.com/guper.co"
+        },
+        {
+          "network": "Instagram",
+          "href": "https://www.instagram.com/guper.co"
+        },
+        {
+          "network": "Linkedin",
+          "href": "https://www.linkedin.com/company/guper"
+        }
+      ]
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
